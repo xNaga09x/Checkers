@@ -6,11 +6,11 @@ The Checkers Game application is developed in C# with a WPF GUI using the MVVM d
 
 Game Rules and Features:
 
-1. Initial Setup: 
+1.Initial Setup: 
 The game starts with the default configuration of the checkers board, consisting of 8 rows and 8 columns. 
 Red player makes the first move.
 
-2. Piece Movement:
+2.Piece Movement:
 Players take turns making moves.
 
   Normal moves: A player can move their piece diagonally forward to an empty adjacent square.
@@ -19,27 +19,27 @@ Players take turns making moves.
 
   Capture: If a player's piece is adjacent to an opponent's piece and the square beyond it is empty, the player can jump over the opponent's piece and capture it. Multiple consecutive captures are allowed if   possible.
 
-3. Multiple Jump Option: 
+3.Multiple Jump Option: 
 Players can enable or disable the multiple jump option at the beginning of the game. If enabled, a player must perform multiple jumps if possible. 
 Multiple jumps continue until no more captures are possible.
 
-4. End of Game: 
+4.End of Game: 
 The game ends when one player has no more pieces left on the board. 
 The opponent with remaining pieces is declared the winner.
 
-5. Visual Interface:
+5.Visual Interface:
 The game interface displays the checkers board and highlights the active player. 
 It also shows the number of pieces remaining for each player.
 
-6. Save and Load Game:
+6.Save and Load Game:
 Players can save the current state of the game to a file and load it later to continue playing. 
 The saved file contains the game state and the player who has the next move.
 
-7. Statistics:
+7.Statistics:
 The application keeps track of the number of wins for both red and white players.
 Statistics, including the maximum number of pieces remaining for the winning player, are displayed in the menu.
 
-8. Menu Options:
+8.Menu Options:
 
   File Menu:
 
