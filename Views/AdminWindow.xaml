@@ -1,0 +1,54 @@
+﻿<Window x:Class="Tema3.Views.AdminWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tema3.Views"
+        mc:Ignorable="d"
+        Title="AdminWindow" Height="450" Width="800">
+    <Grid>
+        <Menu VerticalAlignment="Top" Height="30">
+            <Menu.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                    <GradientStop Color="Maroon" />
+                </LinearGradientBrush>
+            </Menu.Background>
+            <!-- Meniu Add -->
+            <MenuItem Header="_Add" Foreground="White" Width="40" Height="30">
+                <MenuItem Header="_Category" Command="{Binding Interactions.NewGameCommand}" Background="Maroon" Foreground="White"/>
+                <MenuItem Header="_Producer" Command="{Binding Interactions.SaveCommand}" Background="Maroon" Foreground="White"/>
+                <MenuItem Header="_Product" Command="{Binding Interactions.LoadCommand}" Background="Maroon" Foreground="White"/>
+                <MenuItem Header="_Receipt" Command="{Binding Interactions.LoadCommand}" Background="Maroon" Foreground="White"/>
+                <MenuItem Header="_Stock" Command="{Binding Interactions.LoadCommand}" Background="Maroon" Foreground="White"/>
+                <MenuItem Header="_User" Command="{Binding Interactions.LoadCommand}" Background="Maroon" Foreground="White"/>
+            </MenuItem>
+            <!-- Meniu Modify -->
+            <MenuItem Header="_Modify" Foreground="White" Width="50" Height="30">
+                <MenuItem Header="_Category" Command="{Binding Interactions.NewGameCommand}" Background="Maroon" Foreground="White"/>
+                <MenuItem Header="_Producer" Command="{Binding Interactions.SaveCommand}" Background="Maroon" Foreground="White"/>
+                <MenuItem Header="_Product" Command="{Binding Interactions.LoadCommand}" Background="Maroon" Foreground="White"/>
+                <MenuItem Header="_Receipt" Command="{Binding Interactions.LoadCommand}" Background="Maroon" Foreground="White"/>
+                <MenuItem Header="_Stock" Command="{Binding Interactions.LoadCommand}" Background="Maroon" Foreground="White"/>
+                <MenuItem Header="_User" Command="{Binding Interactions.LoadCommand}" Background="Maroon" Foreground="White"/>
+            </MenuItem>
+            <!-- Meniu Delete -->
+            <MenuItem Header="_Delete" Foreground="White" Width="50" Height="30">
+                <MenuItem Header="_Category" Command="{Binding Interactions.NewGameCommand}" Background="Maroon" Foreground="White"/>
+                <MenuItem Header="_Producer" Command="{Binding Interactions.SaveCommand}" Background="Maroon" Foreground="White"/>
+                <MenuItem Header="_Product" Command="{Binding Interactions.LoadCommand}" Background="Maroon" Foreground="White"/>
+                <MenuItem Header="_Receipt" Command="{Binding Interactions.LoadCommand}" Background="Maroon" Foreground="White"/>
+                <MenuItem Header="_Stock" Command="{Binding Interactions.LoadCommand}" Background="Maroon" Foreground="White"/>
+                <MenuItem Header="_User" Command="{Binding Interactions.LoadCommand}" Background="Maroon" Foreground="White"/>
+            </MenuItem>
+            <!-- Meniu View -->
+            <MenuItem Header="_View" Foreground="White" Width="40" Height="30">
+                <MenuItem Header="_Category" Command="{Binding Interactions.NewGameCommand}" Background="Maroon" Foreground="White"/>
+                <MenuItem Header="_Producer" Command="{Binding Interactions.SaveCommand}" Background="Maroon" Foreground="White"/>
+                <MenuItem Header="_Product" Command="{Binding Interactions.LoadCommand}" Background="Maroon" Foreground="White"/>
+                <MenuItem Header="_Receipt" Command="{Binding Interactions.LoadCommand}" Background="Maroon" Foreground="White"/>
+                <MenuItem Header="_Stock" Command="{Binding Interactions.LoadCommand}" Background="Maroon" Foreground="White"/>
+                <MenuItem Header="_User" Command="{Binding Interactions.LoadCommand}" Background="Maroon" Foreground="White"/>
+            </MenuItem>
+        </Menu>
+    </Grid>
+</Window>

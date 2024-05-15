@@ -1,0 +1,24 @@
+﻿<Window x:Class="Tema3.Views.ProductDetails"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tema3.Views"
+        mc:Ignorable="d"
+        Title="ProductDetails" Height="450" Width="800">
+    <Grid>
+        <ListView Grid.Row="1">
+            <ListView.View>
+                <GridView>
+                    <GridView.Columns>
+                        <GridViewColumn Header="ID" DisplayMemberBinding="{Binding ID}"/>
+                        <GridViewColumn Header="Name" DisplayMemberBinding="{Binding Name}"/>
+                        <GridViewColumn Header="Barcode" DisplayMemberBinding="{Binding Barcode}"/>
+                        <GridViewColumn Header="Category" DisplayMemberBinding="{Binding Category}"/>
+                        <GridViewColumn Header="Producer" DisplayMemberBinding="{Binding Producer}"/>
+                    </GridView.Columns>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Window>
